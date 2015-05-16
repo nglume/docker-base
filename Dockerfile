@@ -8,6 +8,5 @@ RUN apt-get update -y
 
 RUN mkdir -p /data
 VOLUME ["/data"]
-WORKDIR /data
 
 CMD ["true"]
