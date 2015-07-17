@@ -6,7 +6,6 @@ WORKDIR /tmp
 
 RUN apt-get update -y
 
-RUN mkdir -p /data
-VOLUME ["/data"]
+RUN mkdir -p ${DATA_ROOT:-/data}
 
 CMD ["true"]
